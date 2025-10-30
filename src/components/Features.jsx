@@ -1,4 +1,4 @@
-import { MessageSquare, Layers, Megaphone, Bot, ShieldCheck, BarChart3 } from "lucide-react";
+import { MessageSquare, Settings, Megaphone, Bot, Shield, BarChart3 } from "lucide-react";
 
 export default function Features() {
   const items = [
@@ -8,7 +8,7 @@ export default function Features() {
       desc: "Centralize every customer chat with media, history, and context in one place.",
     },
     {
-      icon: Layers,
+      icon: Settings,
       title: "Smart Workflows",
       desc: "Build trigger-based automation with conditions, delays, and branching logic.",
     },
@@ -28,7 +28,7 @@ export default function Features() {
       desc: "Track delivery, engagement, conversions, and ROI across teams and campaigns.",
     },
     {
-      icon: ShieldCheck,
+      icon: Shield,
       title: "Enterprise-Grade Security",
       desc: "RBAC, MFA, audit trails, and GDPR-friendly data controls to keep you compliant.",
     },

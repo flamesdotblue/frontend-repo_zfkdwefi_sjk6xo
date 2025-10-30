@@ -30,40 +30,6 @@ export default function Analytics() {
             </div>
           ))}
         </div>
-
-        <div className="mt-8 grid lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-            <div className="flex items-center justify-between">
-              <h3 className="font-semibold text-slate-900">Engagement over time</h3>
-              <span className="text-xs text-slate-500">Last 7 days</span>
-            </div>
-            <div className="mt-4 h-56">
-              <div className="h-full w-full rounded-lg bg-gradient-to-t from-slate-100 to-white grid grid-cols-12 items-end gap-2 p-4">
-                {Array.from({ length: 12 }).map((_, i) => (
-                  <div key={i} className="w-full rounded-md bg-emerald-500/80" style={{ height: `${30 + Math.abs(Math.sin(i)) * 60}%` }} />
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-            <h3 className="font-semibold text-slate-900">Top campaigns</h3>
-            <ul className="mt-4 space-y-3">
-              {[
-                { name: "Welcome Series", ctr: "28%", conv: "8.1%" },
-                { name: "Winback Q3", ctr: "21%", conv: "5.4%" },
-                { name: "Product Drop", ctr: "18%", conv: "6.7%" },
-              ].map((c) => (
-                <li key={c.name} className="flex items-center justify-between rounded-lg border border-slate-200 p-3">
-                  <div>
-                    <p className="font-medium text-slate-900">{c.name}</p>
-                    <p className="text-xs text-slate-500">CTR {c.ctr} • Conv {c.conv}</p>
-                  </div>
-                  <span className="text-xs text-emerald-700 bg-emerald-50 border border-emerald-100 rounded px-2 py-1">Live</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
       </div>
     </section>
   );
