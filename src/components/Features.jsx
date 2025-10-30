@@ -1,14 +1,14 @@
-import { MessageSquareText, Workflow, Megaphone, Bot, ShieldCheck, BarChart3 } from "lucide-react";
+import { MessageSquare, Layers, Megaphone, Bot, ShieldCheck, BarChart3 } from "lucide-react";
 
 export default function Features() {
   const items = [
     {
-      icon: MessageSquareText,
+      icon: MessageSquare,
       title: "Unified Conversations",
       desc: "Centralize every customer chat with media, history, and context in one place.",
     },
     {
-      icon: Workflow,
+      icon: Layers,
       title: "Smart Workflows",
       desc: "Build trigger-based automation with conditions, delays, and branching logic.",
     },
